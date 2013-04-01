@@ -12,8 +12,10 @@
 
         If UnitMinutes.Checked Then
             If Counter = TimeValue.Value Then
-                MsgBox(TextReminder.Text)
                 Counter = 0
+                My.Computer.Audio.Play("C:\Windows\Media\notify.wav", AudioPlayMode.Background)
+                MsgBox(TextReminder.Text)
+
 
 
 

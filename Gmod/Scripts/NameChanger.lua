@@ -23,8 +23,10 @@ local names = {        -- Simply add/remove/modify this list if you want more/le
 "Gabe Oldwell", 
 "Domnik Klein", 
 "Lennerd Bearenhart", 
-"Test Test Test",
-"Test123 Test123",
+"Griffin Konst"
+"Plumber Jack"
+"Jack Black"
+"Grufer Hump"
 
 }
 local counter = 1

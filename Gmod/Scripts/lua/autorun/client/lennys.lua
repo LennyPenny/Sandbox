@@ -32,7 +32,7 @@ BunnyCheckBox:SetParent(MainWindow)
 BunnyCheckBox:SetPos(10, 69)
 BunnyCheckBox:SetText('Bunnyhop')
 BunnyCheckBox:SetValue(true)
-BunnyCheckBox:SetConVar(lenny_bunnyhop)
+BunnyCheckBox:SetConVar("lenny_bunnyhop")
 BunnyCheckBox.DoClick = function() end
 BunnyCheckBox:SizeToContents()
 
@@ -40,7 +40,7 @@ FlspamCheckbox = vgui.Create('DCheckBoxLabel')
 FlspamCheckbox:SetParent(MainWindow)
 FlspamCheckbox:SetPos(10, 99)
 FlspamCheckbox:SetText('Flashlight Spam')
-FlspamCheckbox:SetConVar(lenny_flashlight)
+FlspamCheckbox:SetConVar("lenny_flashlight")
 FlspamCheckbox.DoClick = function() end
 FlspamCheckbox:SizeToContents()
 

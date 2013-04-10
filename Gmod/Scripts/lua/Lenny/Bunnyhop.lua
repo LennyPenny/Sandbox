@@ -1,7 +1,7 @@
-CreateConVar("lenny_bunnyhop", 1)
+CreateClientConVar("lenny_bunnyhop", 1, true, false)
 
 function Bunnyhop()
-	if GetConVarNumber("lenny_bunnyhop") == 1 then
+	if GetConVar("lenny_bunnyhop"):GetInt() == 1 then
 	 	if input.IsKeyDown(KEY_SPACE) then
 	 		if LocalPlayer():IsOnGround() then
 	 			RunConsoleCommand("+jump")

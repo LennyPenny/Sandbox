@@ -1,7 +1,7 @@
-CreateConVar("lenny_flashlight", 0)
+CreateClientConVar("lenny_flashlight", 0, true, false)
 
 function Flashspam()
-	if GetConVarNumber("lenny_flashlight") == 1 then
+	if GetConVar("lenny_flashlight"):GetInt() == 1 then
 		if input.IsKeyDown(KEY_H) then
 			RunConsoleCommand("impulse", "100")
 			return end

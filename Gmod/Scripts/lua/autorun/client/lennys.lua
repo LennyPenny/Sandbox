@@ -9,9 +9,7 @@ for k, v in pairs(files) do
 end
 
 
-
--- Derma
-
+--Derma
 
 local DLabel3
 local DLabel2
@@ -20,7 +18,7 @@ local BunnyCheckBox
 local MainWindow
 
 MainWindow = vgui.Create('DFrame')
-MainWindow:SetSize(280, 139)
+MainWindow:SetSize(280, 159)
 MainWindow:Center()
 MainWindow:SetTitle("Lenny's Scripts")
 MainWindow:SetSizable(true)
@@ -56,13 +54,20 @@ DLabel3:SetPos(130, 70)
 DLabel3:SetText('Hold space to bunnyhop')
 DLabel3:SizeToContents()
 
+DCheckBox4 = vgui.Create('DCheckBoxLabel')
+DCheckBox4:SetParent(MainWindow)
+DCheckBox4:SetPos(10, 126)
+DCheckBox4:SetText('Simeple ESP +  admin recognition')
+DCheckBox4:SetConVar("lenny_esp")
+DCheckBox4.DoClick = function() end
+DCheckBox4:SizeToContents()
+
+
+concommand.Add("lenny_menu", Lenny_Menu)
 
 function Lenny_Menu()
 
 
 	MainWindow:SetVisible(true)
+	surface.CreateFont ("MenuLarge", ScreenScale(20), 400, true, false, "MenuSmall")
 end
-
-
-
-concommand.Add("lenny_menu", Lenny_Menu)

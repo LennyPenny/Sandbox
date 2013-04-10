@@ -8,7 +8,7 @@ local function wallhack()
 			if v:IsAdmin() or v:IsSuperAdmin() then
 				draw.DrawText("" ..v:Name().. "[Admin]", "TabLarge", plypos.x, plypos.y, Color(220,60,90,255), 1)
 			else
-				draw.DrawText(v:Name(), "Default", plypos.x, plypos.y, Color(255,255,255), 1)
+				draw.DrawText(v:Name(), "Trebuchet18", plypos.x, plypos.y, Color(255,255,255), 1)
 			end
 		end
 	end
